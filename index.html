@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Base styles */
+        body, html {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .svg-container {
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        .responsive-svg {
+            width: 100%;
+            height: auto;
+            display: none; /* Initially hide all SVGs */
+            margin: 0 auto;
+        }
+
+        .desktop-svg {
+            display: none; /* Hide desktop SVG by default */
+        }
+
+        .mobile-svg {
+            display: none; /* Hide mobile SVG by default */
+        }
+
+        /* Invisible clickable links */
+        .invisible-link {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background: rgba(0, 0, 0, 200); /* for debugging purposes */
+        }
+
+        .link1pc {
+            top: 0.4%;
+            left: 82%;
+            width: 14%;
+            height: 2%;
+        }
+
+        .link2pc {
+            top: 43.1%;
+            left: 41%;
+            width: 52%;
+            height: 1%;
+        }
+
+        .link3pc {
+            top: 97.25%;
+            left: 7%;
+            width: 45%;
+            height: 1%;
+        }
+
+        .link4pc {
+            top: 97.25%;
+            left: 7%;
+            width: 45%;
+            height: 1%;
+        }
+        
+        .link5pc {
+            top: 97.25%;
+            left: 7%;
+            width: 45%;
+            height: 1%;
+        }
+        
+
+
+
+        .link1m {
+            top: 0.4%;
+            left: 82%;
+            width: 14%;
+            height: 2%;
+        }
+
+
+        .link2m {
+            top: 0.4%;
+            left: 82%;
+            width: 14%;
+            height: 2%;
+        }
+        
+        .link3m {
+            top: 0.4%;
+            left: 82%;
+            width: 14%;
+            height: 2%;
+        }
+        
+        .link4m {
+            top: 0.4%;
+            left: 82%;
+            width: 14%;
+            height: 2%;
+        }
+        
+        .link5m {
+            top: 0.4%;
+            left: 82%;
+            width: 14%;
+            height: 2%;
+        }
+
+
+
+        /* Media query for devices with a width of at least 768px (typically tablets and desktops) */
+        @media (min-width: 768px) {
+            .desktop-svg {
+                display: block; /* Show desktop SVG on larger screens */
+            }
+            .desktop-link {
+                display: block; /* Show desktop links on larger screens */
+            }
+        }
+
+        /* Media query for devices with a width less than 768px (typically mobile devices) */
+        @media (max-width: 767px) {
+            .mobile-svg {
+                display: block; /* Show mobile SVG on smaller screens */
+            }
+            .mobile-link {
+                display: block; /* Show mobile links on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="svg-container">
+        <img src="PC.svg" alt="Desktop SVG" class="responsive-svg desktop-svg">
+        <img src="Mobile.svg" alt="Mobile SVG" class="responsive-svg mobile-svg">
+
+        <a href="https://www.youtube.com/watch?v=efNu5aoTBjk" class="invisible-link link1pc desktop-link" target="_blank"></a>
+        <a href="https://t.me/+sx2nZ_rJVLs0MWEy" class="invisible-link link2pc desktop-link" target="_blank"></a>
+        <a href="https://wa.me/message/YMZMGIIDT3ROG1" class="invisible-link link3pc desktop-link" target="_blank"></a>
+
+        <a href="https://mobile.link1.example" class="invisible-link link1m mobile-link" target="_blank"></a>
+        <a href="https://mobile.link2.example" class="invisible-link link2m mobile-link" target="_blank"></a>
+        <a href="https://mobile.link3.example" class="invisible-link link3m mobile-link" target="_blank"></a>
+    </div>
+</body>
+</html>
